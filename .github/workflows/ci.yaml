@@ -17,3 +17,7 @@ jobs:
         run: "sh install.sh"
       - name: "Building scratch image"
         run: "sh build-image.sh"
+      - uses: actions/upload-artifact@v3
+        with:
+          name: rockylinux8-docker.tar.xz
+          path: /var/tmp/rockylinux8-docker.tar.xz
