@@ -11,5 +11,7 @@ jobs:
     container: fedora:35
     steps:
       - uses: actions/checkout@v4
-      - name: "Run image builder"
+      - name: "Run image builder dependency"
         run: "sh install.sh"
+      - name: "Building scratch image"
+        run: "sh build-image.sh"
