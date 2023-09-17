@@ -1,0 +1,13 @@
+---
+name: Build & Release
+on:
+  pull_request:
+  push:
+    branches:
+      - master
+jobs:
+  fedora-job:
+    runs-on: ubuntu-latest
+    container: fedora:35
+    steps:
+      - run: cat /etc/os-release
