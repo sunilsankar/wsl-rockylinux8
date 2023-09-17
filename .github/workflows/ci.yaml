@@ -10,4 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     container: fedora:35
     steps:
-      - run: cat /etc/os-release
+      - run: actions/checkout@v4
+      - name: "Run image builder"
+        run: "sh install.sh"
