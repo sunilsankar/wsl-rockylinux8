@@ -6,9 +6,11 @@ on:
     branches:
       - master
 jobs:
-  fedora-job:
+  rockylinux-job:
     runs-on: ubuntu-latest
-    container: rockylinux:8
+    container: 
+        image: rockylinux:8
+        options: --privileged
     steps:
       - uses: actions/checkout@v4
       - name: "Run image builder dependency"
