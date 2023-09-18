@@ -1,8 +1,8 @@
 
 # Introduction
-I was always curious how redhat ubi docker image was created . I also learnt that we can load docker image in wsl does having custom wsl. I wanted to build a custom wsl but after research I decided  to first build docker image since in wsl we can import docker images
+I wanted to know how redhat ubi docker image was created . I also learnt that we can load docker image in wsl does having custom wsl. I wanted to build a custom wsl but after research I decided  to first build docker image since in wsl we can import docker images
 # Purpose
-To build rockylinux I will using anaconda-tui and lorax kickstart file to build a tar.xz file. This tar file can be imported in wsl
+To build rockylinux I will using anaconda-tui and lorax kickstart file to build the tar.xz file. This tar file can be imported in wsl
 # Environment Setup 
 ## Step 1
 I will be using a vagrant environment. Included `Vagrantfile` in the repo.
